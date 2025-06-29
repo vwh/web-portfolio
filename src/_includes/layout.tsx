@@ -1,7 +1,4 @@
-export default (
-  { title, data, children }: Lume.Data,
-  helpers: Lume.Helpers
-) => {
+export default (data: Lume.Data, helpers: Lume.Helpers) => {
   return (
     <>
       {{ __html: "<!DOCTYPE html>" }}
@@ -15,8 +12,8 @@ export default (
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
 
           {/* Primary Meta Tags */}
-          <title>{title}</title>
-          <meta name="title" content={title} />
+          <title>{data.title}</title>
+          <meta name="title" content={data.title} />
           <meta name="description" content={data.resume.about} />
           <meta name="author" content={data.resume.name} />
           <meta name="robots" content="index, follow" />
@@ -24,12 +21,12 @@ export default (
 
           {/* Open Graph / Facebook */}
           <meta property="og:type" content="website" />
-          <meta property="og:title" content={title} />
+          <meta property="og:title" content={data.title} />
           <meta property="og:description" content={data.resume.about} />
           <meta property="og:locale" content="en_US" />
 
           {/* Twitter */}
-          <meta property="twitter:title" content={title} />
+          <meta property="twitter:title" content={data.title} />
           <meta property="twitter:description" content={data.resume.about} />
 
           {/* Favicon */}
@@ -111,7 +108,7 @@ export default (
             id="main-content"
             className="max-w-4xl mx-auto px-4 md:px-6 py-6 md:py-8"
           >
-            {children}
+            {data.children}
           </main>
 
           {/* Footer */}
