@@ -51,6 +51,7 @@ export default (data: Lume.Data, helpers: Lume.Helpers) => {
         </head>
         <body className="bg-gray-900 text-gray-100 font-mono min-h-screen">
           <script defer src="/javascript/oneko.js" type="text/javascript" />
+          <script defer src="/javascript/title.js" type="text/javascript" />
 
           {/* Skip to main content for accessibility */}
           <a
