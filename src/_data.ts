@@ -5,10 +5,7 @@ export const resume = {
   locationLink: "https://www.google.com/maps/place/amman",
 
   about:
-    "I'm a software developer working with JavaScript and TypeScript in full-stack development. A passionate GNU/Linux enthusiast, I daily drive Linux systems. I love web development and enjoy pushing the boundaries of what the web can do, while also exploring system programming to deepen my technical expertise and expand my understanding of computing.",
-
-  summary:
-    "Full-Stack JS/TS Developer passionate about pushing the boundaries of the web.",
+    "I’m a fresh computer‐science graduate and full-stack developer specializing in JavaScript/TypeScript. A passionate GNU/Linux enthusiast running NixOS daily, I love pushing the web’s boundaries and exploring system programming to deepen my technical expertise.",
 
   languagesSummary:
     "Primarily using TypeScript for its powerful type safety and tooling, making development smoother and more reliable. I also work with JavaScript for its flexibility, Python for scripting and quick prototyping, and C for system programming, where I am deepening my skills in low-level development.",
