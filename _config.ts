@@ -8,5 +8,6 @@ const site = lume({
 site.use(jsx());
 
 site.add("/styles.css");
+site.add("/images/");
 
 export default site;
