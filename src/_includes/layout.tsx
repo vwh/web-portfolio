@@ -7,6 +7,11 @@ export default ({ title, children }: Lume.Data, helpers: Lume.Helpers) => (
         <link rel="stylesheet" href="/styles.css" />
       </head>
       <body>
+        <script
+          defer
+          src="/javascript/oneko.js"
+          type="text/javascript"
+        ></script>
         {children}
       </body>
     </html>

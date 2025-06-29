@@ -9,5 +9,6 @@ site.use(jsx());
 
 site.add("/styles.css");
 site.add("/images/");
+site.add("/javascript/");
 
 export default site;
