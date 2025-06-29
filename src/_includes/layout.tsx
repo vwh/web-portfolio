@@ -42,14 +42,14 @@ export default (data: Lume.Data, helpers: Lume.Helpers) => {
 
           {/* Fonts */}
           <link
-            href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
             rel="stylesheet"
           />
 
           {/* Stylesheets */}
           <link rel="stylesheet" href="/styles.css" />
         </head>
-        <body className="bg-gray-900 text-gray-100 font-mono min-h-screen">
+        <body className="bg-gray-900 text-gray-100 min-h-screen">
           <script defer src="/javascript/oneko.js" type="text/javascript" />
           <script defer src="/javascript/title.js" type="text/javascript" />
 
