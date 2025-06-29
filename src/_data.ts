@@ -12,23 +12,23 @@ export const resume = {
   languages: [
     {
       name: "TypeScript",
-      image: "/languages/TypeScript.webp",
+      image: "/images/languages/TypeScript.webp",
       url: "https://www.typescriptlang.org/",
       size: 80,
     },
     {
       name: "JavaScript",
-      image: "/languages/JavaScript.webp",
+      image: "/images/languages/JavaScript.webp",
       url: "https://www.javascript.com/",
     },
     {
       name: "Python",
-      image: "/languages/Python.webp",
+      image: "/images/languages/Python.webp",
       url: "https://www.python.org/",
     },
     {
       name: "C",
-      image: "/languages/Clang.webp",
+      image: "/images/languages/Clang.webp",
       url: "https://en.wikipedia.org/wiki/C_(programming_language)",
     },
   ],
@@ -38,31 +38,31 @@ export const resume = {
   runtimes: [
     {
       name: "Node.js",
-      image: "/runtimes/Node.svg",
+      image: "/images/runtimes/Node.svg",
       url: "https://nodejs.org/",
       size: 72,
     },
     {
       name: "Cloudflare Workers",
-      image: "/runtimes/CloudflareWorkers.svg",
+      image: "/images/runtimes/CloudflareWorkers.svg",
       url: "https://developers.cloudflare.com/workers/",
       size: 80,
     },
     {
       name: "Deno",
-      image: "/runtimes/Deno.svg",
+      image: "/images/runtimes/Deno.svg",
       url: "https://deno.land/",
       size: 80,
     },
     {
       name: "Bun",
-      image: "/runtimes/Bun.svg",
+      image: "/images/runtimes/Bun.svg",
       url: "https://bun.sh/",
       size: 90,
     },
     {
       name: "Browsers",
-      image: "/runtimes/Browsers.svg",
+      image: "/images/runtimes/Browsers.svg",
       url: "#",
       size: 96,
     },
