@@ -3,3 +3,323 @@
 body {
   font-family: "Exo 2", sans-serif;
 }
+
+/* Selection styling */
+::selection {
+  background-color: #a2c9eb;
+  color: #000;
+}
+
+::-moz-selection {
+  background-color: #a2c9eb;
+  color: #000;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a2c9eb;
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #333 #111;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Focus styles for accessibility */
+a:focus,
+button:focus {
+  outline: 2px solid #a2c9eb;
+  outline-offset: 2px;
+}
+
+/* Enhanced link styles */
+a {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #a2c9eb !important;
+}
+
+/* Underline animation for links */
+a.underline {
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  transition: all 0.3s ease;
+}
+
+a.underline:hover {
+  border-bottom-color: transparent;
+  text-shadow: 0 0 8px #a2c9eb;
+}
+
+/* Header navigation links */
+nav a {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #a2c9eb;
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* H2 headings with animated ">" */
+h2 {
+  position: relative;
+  padding-left: 0;
+}
+
+h2::before {
+  content: ">";
+  color: #a2c9eb;
+  font-weight: bold;
+  margin-right: 0.5rem;
+  display: inline-block;
+  transition: all 0.3s ease;
+  transform: translateX(0);
+}
+
+h2:hover::before {
+  transform: translateX(4px) scale(1.2);
+  color: #fff;
+  text-shadow: 0 0 10px #a2c9eb;
+}
+
+/* ASCII art glow effect */
+pre {
+  position: relative;
+}
+
+pre:hover {
+  text-shadow: 0 0 10px currentColor;
+}
+
+/* Project cards hover effect */
+section#projects > div > div {
+  transition: all 0.3s ease;
+  padding: 1rem;
+  margin: -1rem;
+  border-radius: 4px;
+}
+
+section#projects > div > div:hover {
+  background-color: rgba(162, 201, 235, 0.05);
+  transform: translateX(8px);
+}
+
+/* Skills hover effect */
+section#skills span {
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+section#skills span:hover {
+  color: #a2c9eb !important;
+  transform: translateY(-2px);
+  text-shadow: 0 0 8px #a2c9eb;
+}
+
+/* Contact links special styling */
+section#contact a {
+  position: relative;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+section#contact a:hover {
+  transform: translateX(4px);
+}
+
+section#contact a::before {
+  content: "→";
+  position: absolute;
+  left: -20px;
+  opacity: 0;
+  transition: all 0.3s ease;
+  color: #a2c9eb;
+}
+
+section#contact a:hover::before {
+  opacity: 1;
+  left: -16px;
+}
+
+/* Mobile menu animation */
+#mobile-menu {
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+#mobile-menu:not(.hidden) {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Mobile menu button hover */
+#mobile-menu-button:hover {
+  transform: rotate(90deg);
+}
+
+/* Button/link active states */
+button:active,
+a:active {
+  transform: scale(0.95);
+}
+
+/* Cursor styles */
+h2,
+section#skills span {
+  cursor: default;
+}
+
+nav a,
+a[href] {
+  cursor: pointer;
+}
+
+/* Loading animation for images */
+img {
+  transition: opacity 0.3s ease;
+}
+
+img:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+}
+
+/* Text selection on headers */
+h1,
+h2,
+h3 {
+  user-select: none;
+}
+
+/* Smooth transitions for all interactive elements */
+* {
+  transition-property: color, background-color, border-color, transform, opacity,
+    box-shadow;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
+
+/* Header border glow effect */
+header {
+  position: relative;
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #a2c9eb, transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+header:hover::after {
+  opacity: 0.5;
+}
+
+/* Subtle glow on accent color elements */
+[style*="#a2c9eb"] {
+  transition: all 0.3s ease;
+}
+
+/* Active section indicator */
+section:target {
+  position: relative;
+}
+
+section:target::before {
+  content: "";
+  position: absolute;
+  left: -1rem;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background-color: #a2c9eb;
+  opacity: 0.7;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  h2::before {
+    margin-right: 0.25rem;
+  }
+
+  section#projects > div > div:hover {
+    transform: translateX(4px);
+  }
+
+  section#contact a::before {
+    display: none;
+  }
+}
+
+/* Print styles */
+@media print {
+  * {
+    color: #000 !important;
+    background: transparent !important;
+    text-shadow: none !important;
+  }
+}
+
+/* Reduced motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* High contrast mode adjustments */
+@media (prefers-contrast: high) {
+  ::-webkit-scrollbar-thumb {
+    background: #fff;
+  }
+
+  nav a::after {
+    background-color: #fff;
+  }
+}

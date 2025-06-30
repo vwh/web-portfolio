@@ -52,7 +52,7 @@ export default (data: Lume.Data, helpers: Lume.Helpers) => (
     {/* Contact */}
     <section id="contact" class="mb-8">
       <h2 class="mb-3" style="color: #a2c9eb">
-        &gt; Contact
+        Contact
       </h2>
       <div class="space-y-1">
         <div>
@@ -96,7 +96,7 @@ export default (data: Lume.Data, helpers: Lume.Helpers) => (
     {/* Languages */}
     <section id="languages" class="mb-8">
       <h2 class="mb-3" style="color: #a2c9eb">
-        &gt; Languages
+        Languages
       </h2>
       <div
         class="text-gray-300 mb-4"
@@ -107,7 +107,7 @@ export default (data: Lume.Data, helpers: Lume.Helpers) => (
     {/* Runtimes */}
     <section id="runtimes" class="mb-8">
       <h2 class="mb-3" style="color: #a2c9eb">
-        &gt; Runtime Environments
+        Runtime Environments
       </h2>
       <div
         class="text-gray-300 mb-4"
@@ -118,7 +118,7 @@ export default (data: Lume.Data, helpers: Lume.Helpers) => (
     {/* Skills */}
     <section id="skills" class="mb-8">
       <h2 class="mb-3" style="color: #a2c9eb">
-        &gt; Skills
+        Skills
       </h2>
       <div class="flex flex-wrap gap-x-4 gap-y-1">
         {data.resume.skills.map((skill: string) => (
@@ -130,7 +130,7 @@ export default (data: Lume.Data, helpers: Lume.Helpers) => (
     {/* Projects */}
     <section id="projects" class="mb-8">
       <h2 class="mb-3" style="color: #a2c9eb">
-        &gt; Projects
+        Projects
       </h2>
       <div class="space-y-6">
         {data.resume.projects.map((project: any) => (
@@ -165,7 +165,7 @@ export default (data: Lume.Data, helpers: Lume.Helpers) => (
     {/* Future */}
     <section class="mb-8">
       <h2 class="mb-3" style="color: #a2c9eb">
-        &gt; What's Next
+        What's Next
       </h2>
       <div
         class="text-gray-300"
