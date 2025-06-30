@@ -4,7 +4,48 @@ body {
   font-family: "Exo 2", sans-serif;
 }
 
-/* Selection styling */
+/* Noise overlay effect */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/images/effects/Noise.webp");
+  background-repeat: repeat;
+  background-size: 150px 150px;
+  opacity: 0.09;
+  z-index: 1000;
+  pointer-events: none;
+  mix-blend-mode: screen;
+  animation: noise-float 15s infinite ease-in-out;
+}
+
+@keyframes noise-float {
+  0%,
+  100% {
+    background-position: 0px 0px;
+  }
+  25% {
+    background-position: -20px -15px;
+  }
+  50% {
+    background-position: -40px -30px;
+  }
+  75% {
+    background-position: -20px -45px;
+  }
+}
+
+/* Respect user preferences */
+@media (prefers-reduced-motion: reduce) {
+  body::before {
+    animation: none !important;
+  }
+}
+
+/* Selection  */
 ::selection {
   background-color: #a2c9eb;
   color: #000;
