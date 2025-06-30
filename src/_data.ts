@@ -60,9 +60,7 @@ export const resume = {
     },
   },
 
-  resume: {
-    url: "./resume.pdf",
-  },
+  resumeLink: "./resume.pdf",
 
   futurePlans:
     "Diving into <strong>system programming</strong> with <strong>C</strong>, <strong>Zig</strong>, and <strong>Rust</strong> to master systems and performance optimization, while exploring diverse databases and back-end technologies for efficient, scalable web apps.",
@@ -122,3 +120,11 @@ export const resume = {
     },
   ],
 } as const;
+
+declare global {
+  namespace Lume {
+    interface Data {
+      resume: typeof resume;
+    }
+  }
+}
