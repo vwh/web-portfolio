@@ -32,94 +32,51 @@ export default (data: Lume.Data, helpers: Lume.Helpers) => {
           {/* Favicon */}
           <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
 
-          {/* Preconnect to external domains */}
-          <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link
-            rel="preconnect"
-            href="https://fonts.gstatic.com"
-            crossOrigin="anonymous"
-          />
-
           {/* Fonts */}
           <link
             href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
             rel="stylesheet"
           />
 
-          {/* Stylesheets */}
           <link rel="stylesheet" href="/styles.css" />
         </head>
-        <body className="bg-gray-900 text-gray-100 min-h-screen">
+
+        <body className="bg-black text-gray-300 min-h-screen">
           <script defer src="/javascript/oneko.js" type="text/javascript" />
           <script defer src="/javascript/title.js" type="text/javascript" />
 
-          {/* Skip to main content for accessibility */}
-          <a
-            href="#main-content"
-            className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 bg-blue-600 text-white px-4 py-2 rounded z-50"
-          >
-            Skip to main content
-          </a>
-
-          {/* Terminal-style header */}
-          <header className="border-b border-gray-700 bg-gray-800/50 backdrop-blur-sm sticky top-0 z-50">
-            <div className="max-w-4xl mx-auto px-6 py-4">
+          {/* Simple header */}
+          {/* <header className="border-b border-gray-800 py-4">
+            <div className="max-w-3xl mx-auto px-6">
               <div className="flex items-center justify-between">
-                <div className="flex items-center space-x-2">
-                  <div className="flex space-x-2" aria-hidden="true">
-                    <div className="w-3 h-3 rounded-full bg-red-500" />
-                    <div className="w-3 h-3 rounded-full bg-yellow-500" />
-                    <div className="w-3 h-3 rounded-full bg-green-500" />
-                  </div>
-                  <span className="ml-4 text-[#a2c9eb] font-medium">
-                    ~/portfolio
-                  </span>
-                </div>
-                <nav className="hidden md:flex space-x-6" role="navigation">
+                <span className="font-mono text-lg" style="color: #a2c9eb">
+                  ~/
+                </span>
+                <nav className="flex space-x-8">
                   <a
                     href="#about"
-                    className="text-gray-300 hover:text-[#a2c9eb] transition-colors duration-200"
+                    className="text-gray-300 hover:text-[#a2c9eb]"
                   >
-                    /About
+                    Home
                   </a>
                   <a
                     href="#skills"
-                    className="text-gray-300 hover:text-[#a2c9eb] transition-colors duration-200"
+                    className="text-gray-300 hover:text-[#a2c9eb]"
                   >
-                    /Skills
-                  </a>
-                  <a
-                    href="#projects"
-                    className="text-gray-300 hover:text-[#a2c9eb] transition-colors duration-200"
-                  >
-                    /Projects
+                    Blog
                   </a>
                   <a
                     href="#contact"
-                    className="text-gray-300 hover:text-[#a2c9eb] transition-colors duration-200"
+                    className="text-gray-300 hover:text-[#a2c9eb]"
                   >
-                    /Contact
+                    Contact
                   </a>
                 </nav>
               </div>
             </div>
-          </header>
+          </header> */}
 
-          <main
-            id="main-content"
-            className="max-w-4xl mx-auto px-4 md:px-6 py-6 md:py-8"
-          >
-            {data.children}
-          </main>
-
-          {/* Footer */}
-          <footer className="border-t border-gray-700 bg-gray-800/30 mt-16">
-            <div className="max-w-4xl mx-auto px-6 py-8">
-              <div className="text-center text-gray-400">
-                <p className="text-[#a2c9eb]">yazan@portfolio:~$</p>
-              </div>
-            </div>
-          </footer>
+          <main className="max-w-3xl mx-auto px-6 py-8">{data.children}</main>
         </body>
       </html>
     </>
