@@ -9,19 +9,12 @@
     "serve": "deno task lume -s"
   },
   "compilerOptions": {
-    "types": [
-      "lume/types.ts"
-    ],
+    "types": ["lume/types.ts"],
     "jsx": "react-jsx",
     "jsxImportSource": "lume"
   },
-  "unstable": [
-    "temporal",
-    "fmt-component"
-  ],
+  "unstable": ["temporal", "fmt-component"],
   "lint": {
-    "plugins": [
-      "https://deno.land/x/lume@v3.0.4/lint.ts"
-    ]
+    "plugins": ["https://deno.land/x/lume@v3.0.4/lint.ts"]
   }
 }

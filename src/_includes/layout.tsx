@@ -30,7 +30,7 @@ export default ({ resume, title, children }: Lume.Data) => {
           <meta property="twitter:description" content={resume.about} />
 
           {/* Favicon */}
-          <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+          <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
 
           {/* Fonts */}
           <link
@@ -38,12 +38,12 @@ export default ({ resume, title, children }: Lume.Data) => {
             rel="stylesheet"
           />
 
-          <link rel="stylesheet" href="/styles.css" />
+          <link rel="stylesheet" href="./styles.css" />
         </head>
 
         <body className="bg-black text-gray-300 min-h-screen">
-          <script defer src="/javascript/oneko.js" type="text/javascript" />
-          <script defer src="/javascript/title.js" type="text/javascript" />
+          <script defer src="./javascript/oneko.js" type="text/javascript" />
+          <script defer src="./javascript/title.js" type="text/javascript" />
 
           {/* Simple header */}
           {/* <header className="border-b border-gray-800 py-4">
