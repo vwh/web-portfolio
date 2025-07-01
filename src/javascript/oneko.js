@@ -2,7 +2,7 @@
   !0 === window.matchMedia("(prefers-reduced-motion: reduce)") ||
     window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const t = document.createElement("div");
-  let e = 32,
+  let e = window.innerWidth - 16,
     n = 32,
     a = 0,
     l = 0,
