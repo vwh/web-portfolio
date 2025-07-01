@@ -49,7 +49,7 @@ export default ({ resume, title, children }: Lume.Data) => {
           {/* <header className="border-b border-gray-800 py-4">
             <div className="max-w-3xl mx-auto px-6">
               <div className="flex items-center justify-between">
-                <span className="font-mono text-lg" style="color: #a2c9eb">
+                <span className="font-mono text-lg">
                   ~/
                 </span>
                 <nav className="flex space-x-8">

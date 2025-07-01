@@ -7,38 +7,22 @@ interface ContactProps {
 export default function ({ email, socials, resumeLink }: ContactProps) {
   return (
     <section id="contact" class="mb-8">
-      <h2 class="mb-3" style="color: #a2c9eb">
-        Contact
-      </h2>
+      <h2 class="mb-3">Contact</h2>
       <div class="space-y-1">
         <div>
-          <a
-            href={`mailto:${email}`}
-            class="underline break-all"
-            style="color: #a2c9eb"
-          >
+          <a href={`mailto:${email}`} class="underline break-all">
             {email}
           </a>
         </div>
         {Object.entries(socials).map(([key, social]) => (
           <div key={key}>
-            <a
-              href={social.url}
-              target="_blank"
-              class="underline"
-              style="color: #a2c9eb"
-            >
+            <a href={social.url} target="_blank" class="underline">
               {social.name}
             </a>
           </div>
         ))}
         <div>
-          <a
-            href={resumeLink}
-            target="_blank"
-            class="underline"
-            style="color: #a2c9eb"
-          >
+          <a href={resumeLink} target="_blank" class="underline">
             Resume
           </a>
         </div>

@@ -93,6 +93,13 @@ button:focus {
   outline-offset: 2px;
 }
 
+h2,
+a,
+pre,
+span {
+  color: #a2c9eb;
+}
+
 /* Enhanced link styles */
 a {
   position: relative;
