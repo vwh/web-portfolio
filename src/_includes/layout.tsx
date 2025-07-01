@@ -1,4 +1,8 @@
+import { stripHtmlTags } from "../utils/index.ts";
+
 export default ({ resume, title, children }: Lume.Data) => {
+  const about = stripHtmlTags(resume.about);
+
   return (
     <>
       {{ __html: "<!DOCTYPE html>" }}
@@ -14,7 +18,7 @@ export default ({ resume, title, children }: Lume.Data) => {
           {/* Primary Meta Tags */}
           <title>{title}</title>
           <meta name="title" content={title} />
-          <meta name="description" content={resume.about} />
+          <meta name="description" content={about} />
           <meta name="author" content={resume.name} />
           <meta name="robots" content="index, follow" />
           <meta name="language" content="English" />
@@ -22,12 +26,12 @@ export default ({ resume, title, children }: Lume.Data) => {
           {/* Open Graph / Facebook */}
           <meta property="og:type" content="website" />
           <meta property="og:title" content={title} />
-          <meta property="og:description" content={resume.about} />
+          <meta property="og:description" content={about} />
           <meta property="og:locale" content="en_US" />
 
           {/* Twitter */}
           <meta property="twitter:title" content={title} />
-          <meta property="twitter:description" content={resume.about} />
+          <meta property="twitter:description" content={about} />
 
           {/* Favicon */}
           <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
