@@ -88,13 +88,16 @@
 
   function marqueeEffect(text, done) {
     const pad = "   ";
-    const msg = text + pad,
-      pos = 0;
+    const msg = text + pad;
+    let pos = 0;
+
     const interval = setInterval(() => {
       if (stopped) return clearInterval(interval);
+
       document.title = msg.substring(pos) + msg.substring(0, pos);
       pos = (pos + 1) % msg.length;
     }, 200);
+
     setTimeout(() => {
       if (!stopped) {
         clearInterval(interval);
