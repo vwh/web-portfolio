@@ -5,7 +5,7 @@ export const resume = {
   locationLink: "https://www.google.com/maps/place/amman",
 
   about:
-    "I’m a <strong>recent CS graduate</strong> and <strong>full-stack JavaScript/TypeScript developer</strong>, daily <strong>NixOS</strong> user and <strong>GNU/Linux enthusiast</strong> exploring system programming to deepen my expertise.",
+    "I’m a <strong>recent CS graduate</strong> and <strong>full-stack JavaScript/TypeScript developer</strong>, daily <a href='https://github.com/vwh/nixos-config' target='_blank' class='underline break-all' style='color: #a2c9eb'>NixOS</a> user and <strong>GNU/Linux enthusiast</strong> exploring system programming to deepen my expertise.",
 
   languagesSummary:
     "Using <strong>TypeScript</strong> for type safety, <strong>JavaScript</strong> for flexibility, <strong>Python</strong> for scripting and rapid prototyping, and <strong>C</strong> for low-level system programming.",
@@ -17,6 +17,7 @@ export const resume = {
     "JavaScript",
     "TypeScript",
     "Python",
+    "C",
     "WebAssembly",
     "Vite",
     "React",
@@ -39,6 +40,7 @@ export const resume = {
     "Cloudflare",
     "Docker",
     "Linux",
+    "Nix",
     "Git",
   ],
 
