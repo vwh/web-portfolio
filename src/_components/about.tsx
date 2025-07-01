@@ -33,9 +33,9 @@ export default function ({
             rel="noopener noreferrer"
             class="
               underline
-              bg-white/10
+              bg-white/5
               font-semibold
-              px-4
+              px-2
               py-1
               rounded
             "
