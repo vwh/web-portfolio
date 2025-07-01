@@ -1,8 +1,12 @@
 !(function () {
+  if (window.matchMedia("(max-width: 600px)").matches) {
+    return;
+  }
+
   !0 === window.matchMedia("(prefers-reduced-motion: reduce)") ||
     window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const t = document.createElement("div");
-  let e = window.innerWidth - 16,
+  let e = 32,
     n = 32,
     a = 0,
     l = 0,
