@@ -25,5 +25,6 @@ site.use(
 site.add("/styles.css");
 site.add("/images/");
 site.add("/javascript/");
+site.add("/documents/");
 
 export default site;

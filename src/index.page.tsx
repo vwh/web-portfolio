@@ -8,6 +8,7 @@ export default ({ resume, comp }: Lume.Data) => (
       about={resume.about}
       locationLink={resume.locationLink}
       location={resume.location}
+      resumeLink={resume.resumeLink}
     />
     <comp.contact
       email={resume.contact.email}

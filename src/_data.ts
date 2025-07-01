@@ -62,7 +62,7 @@ export const resume = {
     },
   },
 
-  resumeLink: "./resume.pdf",
+  resumeLink: "./documents/resume.pdf",
 
   futurePlans:
     "Diving into <strong>system programming</strong> with <strong>C</strong>, <strong>Zig</strong>, and <strong>Rust</strong> to master systems and performance optimization, while exploring diverse databases and back-end technologies for efficient, scalable web apps.",

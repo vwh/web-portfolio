@@ -21,9 +21,9 @@ export default function ({ email, socials, resumeLink }: ContactProps) {
             </a>
           </div>
         ))}
-        <div>
+        <div class="block sm:hidden">
           <a href={resumeLink} target="_blank" class="underline">
-            Resume
+            <strong>Resume</strong>
           </a>
         </div>
       </div>
