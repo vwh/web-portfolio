@@ -75,7 +75,7 @@ export const resume = {
       links: [
         {
           type: "Website",
-          href: "https://github.com/vwh/sqlite-online",
+          href: "https://vwh.github.io/sqlite-online",
         },
         {
           type: "Source",
