@@ -1,17 +1,7 @@
 import Section from "./blocks/Section.tsx";
 import Link from "./blocks/Link.tsx";
 
-interface ProjectsProps {
-  projects: {
-    title: string;
-    description: string;
-    active?: boolean;
-    links: {
-      type: string;
-      href: string;
-    }[];
-  }[];
-}
+type ProjectsProps = Pick<Lume.Data["resume"], "projects">;
 
 export default function ({ projects }: ProjectsProps) {
   return (

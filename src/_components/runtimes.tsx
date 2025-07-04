@@ -1,9 +1,7 @@
 import Section from "./blocks/Section.tsx";
 import HtmlContent from "./blocks/HtmlContent.tsx";
 
-interface RuntimeProps {
-  runtimesSummary: string;
-}
+type RuntimeProps = Pick<Lume.Data["resume"], "runtimesSummary">;
 
 export default function ({ runtimesSummary }: RuntimeProps) {
   return (

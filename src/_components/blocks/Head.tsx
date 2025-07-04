@@ -5,11 +5,10 @@ interface HeadProps {
     name: string;
     about: string;
   };
-
   title: string | undefined;
 }
 
-export default ({ resume, title }: Readonly<HeadProps>) => {
+export default ({ resume, title }: HeadProps) => {
   const about = stripHtmlTags(resume.about);
 
   return (

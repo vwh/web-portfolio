@@ -1,11 +1,9 @@
 import Section from "./blocks/Section.tsx";
 import HtmlContent from "./blocks/HtmlContent.tsx";
 
-interface Languages {
-  languagesSummary: string;
-}
+type LanguagesProps = Pick<Lume.Data["resume"], "languagesSummary">;
 
-export default function ({ languagesSummary }: Languages) {
+export default function ({ languagesSummary }: LanguagesProps) {
   return (
     <Section id="languages" title="Languages">
       <HtmlContent content={languagesSummary} />

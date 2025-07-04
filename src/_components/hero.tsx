@@ -1,7 +1,4 @@
-interface HeroProps {
-  name: string;
-  ascii: string;
-}
+type HeroProps = Pick<Lume.Data["resume"], "name" | "ascii">;
 
 export default function ({ name, ascii }: HeroProps) {
   return (

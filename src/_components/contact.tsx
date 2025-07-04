@@ -1,11 +1,10 @@
 import Section from "./blocks/Section.tsx";
 import Link from "./blocks/Link.tsx";
 
-interface ContactProps {
-  email: string;
-  socials: Record<string, { name: string; url: string }>;
-  resumeLink: string;
-}
+type ContactProps = Pick<Lume.Data["resume"], "resumeLink"> & {
+  email: Lume.Data["resume"]["contact"]["email"];
+  socials: Lume.Data["resume"]["contact"]["social"];
+};
 
 export default function ({ email, socials, resumeLink }: ContactProps) {
   return (

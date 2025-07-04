@@ -1,8 +1,6 @@
 import Section from "./blocks/Section.tsx";
 
-interface SkillsProps {
-  skills: string[];
-}
+type SkillsProps = Pick<Lume.Data["resume"], "skills">;
 
 export default function ({ skills }: SkillsProps) {
   return (

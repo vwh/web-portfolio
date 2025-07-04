@@ -2,12 +2,10 @@ import Section from "./blocks/Section.tsx";
 import HtmlContent from "./blocks/HtmlContent.tsx";
 import Link from "./blocks/Link.tsx";
 
-interface AboutProps {
-  about: string;
-  locationLink: string;
-  location: string;
-  resumeLink: string;
-}
+type AboutProps = Pick<
+  Lume.Data["resume"],
+  "about" | "locationLink" | "location" | "resumeLink"
+>;
 
 export default function ({
   about,
@@ -21,8 +19,7 @@ export default function ({
       <HtmlContent content={about} />
       <div class="flex justify-between items-center">
         <p class="text-gray-300">
-          Currently based in{" "}
-          <Link href={locationLink}>{location}</Link>.
+          Currently based in <Link href={locationLink}>{location}</Link>.
         </p>
         <div class="hidden sm:block">
           <Link

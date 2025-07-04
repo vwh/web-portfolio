@@ -3,5 +3,10 @@ interface HtmlContentProps {
 }
 
 export default function ({ content }: HtmlContentProps) {
-  return <div class="text-gray-300 mb-2" dangerouslySetInnerHTML={{ __html: content }} />;
+  return (
+    <div
+      class="text-gray-300 mb-2"
+      dangerouslySetInnerHTML={{ __html: content }}
+    />
+  );
 }

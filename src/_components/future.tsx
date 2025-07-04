@@ -1,9 +1,7 @@
 import Section from "./blocks/Section.tsx";
 import HtmlContent from "./blocks/HtmlContent.tsx";
 
-interface FutureProps {
-  futurePlans: string;
-}
+type FutureProps = Pick<Lume.Data["resume"], "futurePlans">;
 
 export default function ({ futurePlans }: FutureProps) {
   return (
