@@ -1,3 +1,6 @@
+import Section from "./blocks/Section.tsx";
+import Link from "./blocks/Link.tsx";
+
 interface ProjectsProps {
   projects: {
     title: string;
@@ -12,8 +15,7 @@ interface ProjectsProps {
 
 export default function ({ projects }: ProjectsProps) {
   return (
-    <section id="projects" class="mb-8">
-      <h2 class="mb-3">Projects</h2>
+    <Section id="projects" title="Projects">
       <div class="space-y-6">
         {projects.map((project) => (
           <div>
@@ -24,19 +26,12 @@ export default function ({ projects }: ProjectsProps) {
             <p class="text-gray-300 mb-2">{project.description}</p>
             <div class="flex flex-wrap gap-4">
               {project.links.map((link) => (
-                <a
-                  href={link.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="underline"
-                >
-                  {link.type}
-                </a>
+                <Link href={link.href}>{link.type}</Link>
               ))}
             </div>
           </div>
         ))}
       </div>
-    </section>
+    </Section>
   );
 }

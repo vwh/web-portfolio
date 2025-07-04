@@ -1,15 +1,14 @@
+import Section from "./blocks/Section.tsx";
+import HtmlContent from "./blocks/HtmlContent.tsx";
+
 interface FutureProps {
   futurePlans: string;
 }
 
 export default function ({ futurePlans }: FutureProps) {
   return (
-    <section class="mb-8">
-      <h2 class="mb-3">What's Next</h2>
-      <div
-        class="text-gray-300"
-        dangerouslySetInnerHTML={{ __html: futurePlans }}
-      />
-    </section>
+    <Section title="What's Next">
+      <HtmlContent content={futurePlans} />
+    </Section>
   );
 }

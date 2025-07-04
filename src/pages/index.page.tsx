@@ -1,9 +1,11 @@
 export const layout = "layout.tsx";
+
+export const url = "/";
 export const title = "About Me";
 
 export default ({ resume, comp }: Lume.Data) => (
   <>
-    <comp.hero name={resume.name} />
+    <comp.hero name={resume.name} ascii={resume.ascii} />
     <comp.about
       about={resume.about}
       locationLink={resume.locationLink}

@@ -1,3 +1,7 @@
+import Section from "./blocks/Section.tsx";
+import HtmlContent from "./blocks/HtmlContent.tsx";
+import Link from "./blocks/Link.tsx";
+
 interface AboutProps {
   about: string;
   locationLink: string;
@@ -12,26 +16,18 @@ export default function ({
   resumeLink,
 }: AboutProps) {
   return (
-    <section id="about" class="mb-8">
+    <Section id="about" title="About Me">
       <p class="text-gray-300 mb-2 hidden sm:block">Hey.</p>
-      <div
-        class="text-gray-300 mb-2"
-        dangerouslySetInnerHTML={{ __html: about }}
-      />
+      <HtmlContent content={about} />
       <div class="flex justify-between items-center">
         <p class="text-gray-300">
           Currently based in{" "}
-          <a href={locationLink} target="_blank" class="underline">
-            {location}
-          </a>
-          .
+          <Link href={locationLink}>{location}</Link>.
         </p>
         <div class="hidden sm:block">
-          <a
+          <Link
             href={resumeLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            class="
+            className="
               underline
               bg-white/5
               font-semibold
@@ -41,9 +37,9 @@ export default function ({
             "
           >
             Resume
-          </a>
+          </Link>
         </div>
       </div>
-    </section>
+    </Section>
   );
 }
