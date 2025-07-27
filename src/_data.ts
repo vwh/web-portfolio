@@ -105,17 +105,13 @@ export const resume = {
       ],
     },
     {
-      title: "VWH Email",
+      title: "Temporary mail",
       active: true,
-      description: "Open source temp mail service, anonymous and free.",
+      description: "Cloudflare Worker that acts as a temporary email inbox.",
       links: [
         {
-          type: "Website",
-          href: "https://email.vwh.sh",
-        },
-        {
           type: "Source",
-          href: "https://github.com/vwh/vwh-email",
+          href: "https://github.com/vwh/temp-mail",
         },
       ],
     },
