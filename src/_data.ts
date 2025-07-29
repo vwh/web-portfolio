@@ -55,7 +55,7 @@ export const resume = {
   ],
 
   contact: {
-    email: "vwh.e@pm.me",
+    email: "vwhe@proton.me",
     social: {
       GitHub: {
         name: "GitHub",
