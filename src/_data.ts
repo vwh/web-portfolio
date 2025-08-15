@@ -65,10 +65,6 @@ export const resume = {
         name: "Telegram",
         url: "https://t.me/Vimboy",
       },
-      LinkedIn: {
-        name: "LinkedIn",
-        url: "https://www.linkedin.com/in/vwh-yazan/",
-      },
     },
   },
 
