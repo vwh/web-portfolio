@@ -20,6 +20,7 @@ export default ({ resume, comp }: Lume.Data) => (
     <comp.languages languagesSummary={resume.languagesSummary} />
     <comp.runtimes runtimesSummary={resume.runtimesSummary} />
     <comp.skills skills={resume.skills} />
+    <comp.experience experience={resume.experience} />
     <comp.projects projects={resume.projects} />
     <comp.future futurePlans={resume.futurePlans} />
   </>
