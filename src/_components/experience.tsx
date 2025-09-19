@@ -17,7 +17,6 @@ export default function ({ experience }: ExperienceProps) {
               </div>
               <div class="text-sm text-gray-500 text-right">
                 <p class="font-medium">{exp.period}</p>
-                <p class="text-xs">{exp.duration}</p>
               </div>
             </div>
             <p class="text-gray-500 text-sm mb-4">

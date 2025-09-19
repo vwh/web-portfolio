@@ -78,7 +78,6 @@ export const resume = {
       position: "DevOps Consultant",
       type: "Part-time",
       period: "Aug 2025 - Present",
-      duration: "2 mos",
       location: "Amman, Jordan · Remote",
       description: [
         "Implemented enhanced Grafana dashboards using TypeScript SDK.",
@@ -101,7 +100,6 @@ export const resume = {
       position: "Software Engineer",
       type: "Self-employed",
       period: "Mar 2022 - Present",
-      duration: "3 yrs 7 mos",
       location: "Amman, Jordan · Remote",
       description: [
         "Created full-stack web applications for freelance clients and personal projects.",
