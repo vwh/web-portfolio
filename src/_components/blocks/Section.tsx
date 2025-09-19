@@ -6,8 +6,10 @@ interface SectionProps {
 
 export default function ({ id, title, children }: SectionProps) {
   return (
-    <section id={id} class="mb-8">
-      <h2 class="mb-3">{title}</h2>
+    <section id={id} class="mb-12">
+      <div class="section-header">
+        <h2 class="section-title font-bold">{title}</h2>
+      </div>
       {children}
     </section>
   );

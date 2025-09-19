@@ -8,8 +8,11 @@ export default ({ resume, title, children }: Lume.Data) => {
       <html lang="en">
         <Head resume={resume} title={title} />
         <body className="bg-black text-gray-300 min-h-screen">
+          <div className="fixed inset-0 opacity-5"></div>
           <Scripts />
-          <main className="max-w-3xl mx-auto px-6 py-8">{children}</main>
+          <main className="max-w-4xl mx-auto px-6 py-12 relative z-10">
+            {children}
+          </main>
         </body>
       </html>
     </>

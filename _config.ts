@@ -12,10 +12,10 @@ const site = lume({
 });
 
 site.use(jsx());
+site.use(terser());
 site.use(tailwindcss());
 site.use(minifyHTML());
 site.use(lightningcss());
-site.use(terser());
 site.use(
   robots({
     rules: [
@@ -23,7 +23,7 @@ site.use(
         userAgent: "*",
       },
     ],
-  })
+  }),
 );
 
 site.add("styles.css");

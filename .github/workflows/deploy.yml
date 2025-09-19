@@ -32,5 +32,3 @@ jobs:
           project: "yazan"
           entrypoint: "serve.ts"
           root: ""
-          
-          

@@ -2,6 +2,172 @@
 
 body {
   font-family: "Exo 2", sans-serif;
+  background: #000;
+}
+
+/* Enhanced minimal design */
+:root {
+  --accent: #a2c9eb;
+  --accent-hover: #b8d5f0;
+  --bg-dark: #0a0a0a;
+  --bg-card: rgba(255, 255, 255, 0.02);
+  --text-primary: #ffffff;
+  --text-secondary: #a0a0a0;
+  --text-muted: #666666;
+}
+
+/* Enhanced section headers */
+.section-header {
+  position: relative;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+
+.section-header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 2px;
+  background: var(--accent);
+}
+
+.section-title {
+  color: var(--accent);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  font-size: 1.5rem;
+}
+
+/* Glass morphism cards */
+.glass-card {
+  background: var(--bg-card);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Minimal skill tags */
+.skill-tag {
+  background: var(--bg-card);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--text-secondary);
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.skill-tag:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: rgba(162, 201, 235, 0.05);
+  transform: translateY(-1px);
+}
+
+/* ASCII art enhancement */
+.ascii-display {
+  background: var(--bg-card);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  font-family: "Courier New", monospace;
+  line-height: 1.3;
+  color: var(--accent);
+  text-shadow: 0 0 10px rgba(162, 201, 235, 0.2);
+  white-space: pre;
+  overflow-x: auto;
+  backdrop-filter: blur(5px);
+}
+
+/* Subtle animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.floating {
+  animation: float 6s ease-in-out infinite;
+}
+
+.pulse {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+/* Enhanced link styles */
+.link-arrow {
+  position: relative;
+  padding-right: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.link-arrow::after {
+  content: "→";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.link-arrow:hover::after {
+  opacity: 1;
+  transform: translateY(-50%) translateX(4px);
+}
+
+/* Project status indicators */
+.status-indicator {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-left: 0.5rem;
+}
+
+.status-active {
+  background: #4ade80;
+  box-shadow: 0 0 8px rgba(74, 222, 128, 0.5);
+}
+
+/* Gradient text effect */
+.gradient-text {
+  background: linear-gradient(135deg, var(--accent), var(--text-primary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Interactive hover states */
+.interactive {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.interactive:hover {
+  transform: translateY(-2px);
+}
+
+.interactive:active {
+  transform: translateY(0);
 }
 
 /* Noise overlay effect */
@@ -147,6 +313,7 @@ nav a:hover::after {
 h2 {
   position: relative;
   padding-left: 0;
+  font-size: 1.1rem !important;
 }
 
 h2::before {
@@ -277,7 +444,12 @@ h3 {
 
 /* Smooth transitions for all interactive elements */
 * {
-  transition-property: color, background-color, border-color, transform, opacity,
+  transition-property:
+    color,
+    background-color,
+    border-color,
+    transform,
+    opacity,
     box-shadow;
   transition-duration: 0.3s;
   transition-timing-function: ease;

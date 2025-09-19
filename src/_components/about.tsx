@@ -25,12 +25,23 @@ export default function ({
           <Link
             href={resumeLink}
             className="
-              underline
+              inline-block
               bg-white/5
-              font-semibold
-              px-2
-              py-1
-              rounded
+              border
+              border-accent/30
+              text-accent
+              hover:text-white
+              hover:bg-accent/10
+              hover:border-accent
+              px-3
+              py-1.5
+              rounded-md
+              text-sm
+              font-medium
+              transition-colors
+              duration-200
+              hover:shadow-sm
+              hover:shadow-accent/10
             "
           >
             Resume

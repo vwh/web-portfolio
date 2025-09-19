@@ -72,57 +72,6 @@ export const resume = {
   futurePlans:
     "Diving into <strong>system programming</strong> with <strong>C</strong>, <strong>Zig</strong>, and <strong>Rust</strong> to master systems and performance optimization, while exploring diverse databases and back-end technologies for efficient, scalable web apps.",
 
-  projects: [
-    {
-      title: "SQLite Viewer",
-      active: true,
-      description: "WebAssembly browser-based SQLite viewer.",
-      links: [
-        {
-          type: "Website",
-          href: "https://vwh.github.io/sqlite-online",
-        },
-        {
-          type: "Source",
-          href: "https://github.com/vwh/sqlite-viewer",
-        },
-      ],
-    },
-    {
-      title: "MiftahDB",
-      active: true,
-      description: "Fast and lightweight key-value database library.",
-      links: [
-        {
-          type: "Source",
-          href: "https://github.com/miftahDB/miftahdb",
-        },
-      ],
-    },
-    {
-      title: "Temporary mail",
-      active: true,
-      description: "Cloudflare Worker that acts as a temporary email inbox.",
-      links: [
-        {
-          type: "Source",
-          href: "https://github.com/vwh/temp-mail",
-        },
-      ],
-    },
-    {
-      title: "Crust",
-      active: true,
-      description: "Simple toy scripting language.",
-      links: [
-        {
-          type: "Source",
-          href: "https://github.com/vwh/crust",
-        },
-      ],
-    },
-  ],
-
   experience: [
     {
       company: "Quran.com Foundation",
@@ -137,7 +86,15 @@ export const resume = {
         "Optimized alerting systems and resolved critical infrastructure issues across production servers.",
         "Enhanced operational visibility through improved data visualization and monitoring capabilities.",
       ],
-      skills: ["TypeScript", "Bash", "Python", "Grafana", "Kamal", "Docker", "Linux"],
+      skills: [
+        "TypeScript",
+        "Python",
+        "Bash",
+        "Grafana",
+        "Kamal",
+        "Docker",
+        "Linux",
+      ],
     },
     {
       company: "Freelance",
@@ -151,7 +108,30 @@ export const resume = {
         "Developed RESTful APIs and server-side applications with Node.js, Deno, and Bun.",
         "Managed databases including SQLite, PostgreSQL, and Redis for efficient data handling and scalability.",
       ],
-      skills: ["Next.js", "Drizzle", "TypeScript", "Bash", "GitHub", "Python", "Cloudflare", "JavaScript", "React.js", "Node.js", "Deno", "NoSQL", "PostgreSQL", "Nginx", "Tailwind CSS", "Docker", "Prisma ORM", "Redis", "WebAssembly", "SQLite", "Bun", "Git"],
+      skills: [
+        "TypeScript",
+        "JavaScript",
+        "Python",
+        "WebAssembly",
+        "Node.js",
+        "Bun",
+        "Deno",
+        "Next.js",
+        "React.js",
+        "Tailwind CSS",
+        "Drizzle",
+        "Prisma ORM",
+        "Cloudflare",
+        "SQLite",
+        "PostgreSQL",
+        "NoSQL",
+        "Redis",
+        "Docker",
+        "Bash",
+        "Nginx",
+        "GitHub",
+        "Git",
+      ],
     },
   ],
 
@@ -160,8 +140,17 @@ export const resume = {
       institution: "Jadara University",
       degree: "Bachelor's degree, Computer Science",
       period: "Oct 2021 - Jun 2025",
-      description: "Studied core computer science topics, including data structures, object-oriented programming, software development, algorithms, and operating systems, with a focus on problem-solving and building scalable, efficient solutions.",
-      skills: ["Computer Science", "Programming", "Object-Oriented Programming (OOP)", "SQL", "Software Testing", "Data Structures", "Cloud Computing"],
+      description:
+        "Studied core computer science topics, including data structures, object-oriented programming, software development, algorithms, and operating systems, with a focus on problem-solving and building scalable, efficient solutions.",
+      skills: [
+        "Computer Science",
+        "Programming",
+        "Object-Oriented Programming (OOP)",
+        "SQL",
+        "Software Testing",
+        "Data Structures",
+        "Cloud Computing",
+      ],
     },
   ],
 } as const;

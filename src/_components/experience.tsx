@@ -5,30 +5,35 @@ type ExperienceProps = Pick<Lume.Data["resume"], "experience">;
 export default function ({ experience }: ExperienceProps) {
   return (
     <Section id="experience" title="Experience">
-      <div class="space-y-6">
+      <div class="space-y-8">
         {experience.map((exp) => (
-          <div>
-            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-2">
+          <div class="bg-white/5 border border-white/10 rounded-xl p-6">
+            <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-4">
               <div>
-                <h3 class="text-white font-semibold">{exp.position}</h3>
+                <h3 class="text-white font-semibold text-lg mb-1">
+                  {exp.position}
+                </h3>
                 <p class="text-gray-400">{exp.company}</p>
               </div>
-              <div class="text-sm text-gray-500">
-                <p>{exp.period}</p>
+              <div class="text-sm text-gray-500 text-right">
+                <p class="font-medium">{exp.period}</p>
+                <p class="text-xs">{exp.duration}</p>
               </div>
             </div>
-            <p class="text-gray-500 text-sm mb-3">{exp.location} · {exp.type}</p>
-            <ul class="space-y-1 text-gray-300 mb-3">
-              {exp.description.map((item, index) => (
+            <p class="text-gray-500 text-sm mb-4">
+              {exp.location} · {exp.type}
+            </p>
+            <ul class="space-y-2 text-gray-300 mb-4">
+              {exp.description.map((item, _index) => (
                 <li class="flex items-start gap-2">
-                  <span class="text-gray-500 mt-1">•</span>
-                  <span>{item}</span>
+                  <span class="text-accent mt-1 text-sm">▸</span>
+                  <span class="leading-relaxed">{item}</span>
                 </li>
               ))}
             </ul>
-            <div class="flex flex-wrap gap-x-4 gap-y-1">
-              {exp.skills.map((skill) => (
-                <span class="text-gray-300">{skill}</span>
+            <div class="flex flex-wrap gap-2">
+              {exp.skills.map((skill, index) => (
+                <span key={index} class="skill-tag">{skill}</span>
               ))}
             </div>
           </div>
