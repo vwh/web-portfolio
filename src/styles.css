@@ -47,7 +47,6 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
   padding: 1.5rem;
-  margin-bottom: 2rem;
 }
 
 /* Minimal skill tags */
@@ -344,14 +343,11 @@ pre:hover {
 /* Project cards hover effect */
 section#projects > div > div {
   transition: all 0.3s ease;
-  padding: 1rem;
-  margin: -1rem;
   border-radius: 4px;
 }
 
 section#projects > div > div:hover {
   background-color: rgba(162, 201, 235, 0.05);
-  transform: translateX(8px);
 }
 
 /* Skills hover effect */

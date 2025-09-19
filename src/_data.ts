@@ -72,6 +72,53 @@ export const resume = {
   futurePlans:
     "Diving into <strong>system programming</strong> with <strong>C</strong>, <strong>Zig</strong>, and <strong>Rust</strong> to master systems and performance optimization, while exploring diverse databases and back-end technologies for efficient, scalable web apps.",
 
+  projects: [
+    {
+      title: "SQLite Viewer",
+      description: "WebAssembly browser-based SQLite viewer.",
+      links: [
+        {
+          type: "Website",
+          href: "https://vwh.github.io/sqlite-online",
+        },
+        {
+          type: "Source",
+          href: "https://github.com/vwh/sqlite-viewer",
+        },
+      ],
+    },
+    {
+      title: "MiftahDB",
+      description: "Fast and lightweight key-value database library.",
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/miftahDB/miftahdb",
+        },
+      ],
+    },
+    {
+      title: "Temporary mail",
+      description: "Cloudflare Worker that acts as a temporary email inbox.",
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/vwh/temp-mail",
+        },
+      ],
+    },
+    {
+      title: "Crust",
+      description: "Simple toy scripting language.",
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/vwh/crust",
+        },
+      ],
+    },
+  ],
+
   experience: [
     {
       company: "Quran.com Foundation",

@@ -21,8 +21,8 @@ export default function ({ email, socials, resumeLink }: ContactProps) {
           </div>
         ))}
         <div class="block sm:hidden mt-6">
-          <Link 
-            href={resumeLink} 
+          <Link
+            href={resumeLink}
             className="
               inline-block
               bg-white/5
