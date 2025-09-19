@@ -154,6 +154,16 @@ export const resume = {
       skills: ["Next.js", "Drizzle", "TypeScript", "Bash", "GitHub", "Python", "Cloudflare", "JavaScript", "React.js", "Node.js", "Deno", "NoSQL", "PostgreSQL", "Nginx", "Tailwind CSS", "Docker", "Prisma ORM", "Redis", "WebAssembly", "SQLite", "Bun", "Git"],
     },
   ],
+
+  education: [
+    {
+      institution: "Jadara University",
+      degree: "Bachelor's degree, Computer Science",
+      period: "Oct 2021 - Jun 2025",
+      description: "Studied core computer science topics, including data structures, object-oriented programming, software development, algorithms, and operating systems, with a focus on problem-solving and building scalable, efficient solutions.",
+      skills: ["Computer Science", "Programming", "Object-Oriented Programming (OOP)", "SQL", "Software Testing", "Data Structures", "Cloud Computing"],
+    },
+  ],
 } as const;
 
 declare global {
