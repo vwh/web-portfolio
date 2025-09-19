@@ -350,6 +350,33 @@ section#projects > div > div:hover {
   background-color: rgba(162, 201, 235, 0.05);
 }
 
+/* Project links layout */
+section#projects .glass-card {
+  position: relative;
+}
+
+section#projects .glass-card .flex {
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+section#projects .glass-card .flex a {
+  margin-left: 1.5rem;
+}
+
+/* Responsive project links */
+@media (max-width: 640px) {
+  section#projects .glass-card .flex {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+  }
+  
+  section#projects .glass-card .flex a {
+    margin-left: 0;
+  }
+}
+
 /* Skills hover effect */
 section#skills span {
   transition: all 0.3s ease;
@@ -362,18 +389,21 @@ section#skills span:hover {
   text-shadow: 0 0 8px #a2c9eb;
 }
 
-/* Contact links special styling */
-section#contact a {
+/* Contact & Project links special styling */
+section#contact a,
+section#projects a {
   position: relative;
   display: inline-block;
   transition: all 0.3s ease;
 }
 
-section#contact a:hover {
+section#contact a:hover,
+section#projects a:hover {
   transform: translateX(4px);
 }
 
-section#contact a::before {
+section#contact a::before,
+section#projects a::before {
   content: "→";
   position: absolute;
   left: -20px;
@@ -382,7 +412,8 @@ section#contact a::before {
   color: #a2c9eb;
 }
 
-section#contact a:hover::before {
+section#contact a:hover::before,
+section#projects a:hover::before {
   opacity: 1;
   left: -16px;
 }
@@ -504,6 +535,10 @@ section:target::before {
   }
 
   section#contact a::before {
+    display: none;
+  }
+  
+  section#projects a::before {
     display: none;
   }
 }

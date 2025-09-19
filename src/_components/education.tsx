@@ -5,7 +5,7 @@ type EducationProps = Pick<Lume.Data["resume"], "education">;
 export default function ({ education }: EducationProps) {
   return (
     <Section id="education" title="Education">
-      <div class="space-y-8">
+      <div class="space-y-4">
         {education.map((edu) => (
           <div class="bg-white/5 border border-white/10 rounded-xl p-6">
             <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-4">

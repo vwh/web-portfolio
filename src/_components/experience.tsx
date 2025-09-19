@@ -5,7 +5,7 @@ type ExperienceProps = Pick<Lume.Data["resume"], "experience">;
 export default function ({ experience }: ExperienceProps) {
   return (
     <Section id="experience" title="Experience">
-      <div class="space-y-8">
+      <div class="space-y-4">
         {experience.map((exp) => (
           <div class="bg-white/5 border border-white/10 rounded-xl p-6">
             <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-4">
